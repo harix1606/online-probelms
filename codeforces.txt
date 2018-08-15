@@ -1,0 +1,23 @@
+Question : https://codeforces.com/problemset/problem/158/B
+
+Solution:
+
+groups = int(input())
+numbers = list(map(int, raw_input().split()))
+
+totalChildren = 0
+taxi = 0
+
+for i in numbers:
+	totalChildren = totalChildren + i
+
+if (totalChildren%4 == 0):
+	taxi = totalChildren/4
+else:
+	taxi = (totalChildren/4) + 1
+
+print (taxi)
+
+###################################################################################
+
+
