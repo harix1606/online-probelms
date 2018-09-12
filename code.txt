@@ -20,4 +20,18 @@ print (taxi)
 
 ###################################################################################
 
+Question: https://www.codechef.com/problems/HORSES
+
+Solution:
+
+testCases = int(input())
+noOfhorses = int(input())
+horses = list(map(int, raw_input().split()))
+horses.sort()
+
+diff = []
+for i in range (len(horses)-1):
+	d = horses[i+1]-horses[i]
+	diff.append(d)
+print(min(diff))
 
